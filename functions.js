@@ -12,5 +12,20 @@ for(const i of buttons) {
             screenValue += buttonText;
             ioscreen.value = screenValue;
         }
+        else if(buttonText == "C"){
+            buttonText = "";
+            screenValue = buttonText;
+            ioscreen.value = screenValue;
+        }
+        else if(buttonText == "="){
+            buttonText = eval(screenValue);
+            screenValue = buttonText;
+            ioscreen.value = screenValue;
+        }
+        else{
+            screenValue += buttonText;
+            ioscreen.value = screenValue;
+        }
+
     })
 }
