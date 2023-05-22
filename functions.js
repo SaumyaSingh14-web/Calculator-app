@@ -5,10 +5,11 @@ for(const i of buttons) {
     i.addEventListener("click", (e)=>{
         buttonText = e.target.innerHTML; 
         console.log("button text is ", buttonText);
-        screenValue += buttonText;
-        ioscreen.value = screenValue;
-        if (buttonText == "C") {
-            screenValue += "";
+        // screenValue += buttonText;
+        // ioscreen.value = screenValue;
+        if (buttonText == "x") {
+            buttonText = "*";
+            screenValue += buttonText;
             ioscreen.value = screenValue;
         }
     })
