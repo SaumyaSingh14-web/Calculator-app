@@ -6,5 +6,6 @@ for(const i of buttons) {
         buttonText = e.target.innerHTML; 
         console.log("button text is ", buttonText);
         screenValue += buttonText;
+        ioscreen.value = screenValue;
     })
 }
