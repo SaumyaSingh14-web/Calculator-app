@@ -7,5 +7,9 @@ for(const i of buttons) {
         console.log("button text is ", buttonText);
         screenValue += buttonText;
         ioscreen.value = screenValue;
+        if (buttonText == "C") {
+            screenValue += "";
+            ioscreen.value = screenValue;
+        }
     })
 }
